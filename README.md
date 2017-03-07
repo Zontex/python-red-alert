@@ -45,3 +45,7 @@ the API use's the official public API provided by "Pikud ha-oref" in Israel.
 ```sh
 $ sudo pip install requests
 ```
+* NodeJS request library
+```sh
+$ npm install request
+```
