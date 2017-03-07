@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 #!/usr/bin/python
 
+import random
+import math
 import requests
 import json
 import time
@@ -14,18 +16,33 @@ class RedAlert():
         # initialize user agent for web requests
         self.headers = {"User-Agent":""}
 
-    def get_coredinates(location_name):
+    def get_coredinates(self,location_name):
 
         #This function will get city cordinates by given city name
         #so later on it will be possible to virtualize the flying rocket to the city
-        return True
+        HOST = "https://maps.google.com/maps/api/geocode/json?address=%s" % location_name
+        r = requests.get(HOST, headers=self.headers)
+        j = json.loads(r.content)
+        return j["results"][0]["geometry"]["location"]
 
-    def random_cordinates(longtitude,latitude):
+    def random_cordinates(self,latitude,longitude):
 
         # get random cordinates within the city for random virtualization
-        return True
+        # radius of the circle
+        circle_r = 1
+        # center of the circle (x, y)
+        circle_x = latitude
+        circle_y = longitude
+        # random angle
+        alpha = 2 * math.pi * random.random()
+        # random radius
+        r = circle_r * random.random()
+        # calculating coordinates
+        x = r * math.cos(alpha) + circle_x
+        y = r * math.sin(alpha) + circle_y
+        return {"latitude":x,"longitude":y}
 
-    def count_alerts(alerts_data):
+    def count_alerts(self,alerts_data):
         # this function literally return how many alerts there are currently
         return len(alerts_data)
 
@@ -91,12 +108,16 @@ def main():
     alert = RedAlert()
     # check for alerts all the time and do stuff, never stop.
     while True:
+        # sleep 1 second before checking alerts over again to not put pressure on the server.
+        time.sleep(1)
         # get alerts from pikud ha-oref website
         red_alerts = alert.get_red_alerts()
         # if there is red alerts right now, get into action, quickly!
         if(red_alerts != None):
             # loop through each city there is red alert currently
             for alert_code in red_alerts["data"]:
+                # get unique alert id for the current looping alerts
+                alert_id = red_alerts["id"]
                 # get the data of the current alert code
                 alert_data = alert.locations[alert_code]
                 # set the timestamp of the current alert
@@ -104,4 +125,13 @@ def main():
                 # get the cordinates of the city where the rocket is flying to
                 alert_data["cordinates"] = alert.get_coredinates(location_name=alert_data["location_name"])
                 # random cordinates where the rocket should fly to in the virtualization map
-                alert_data["random_cordinates"] = alert.random_cordinates(longtitude=alert_data["cordinates"][0],latitude=alert_data["cordinates"][1])
+                alert_data["random_cordinates"] = alert.random_cordinates(latitude=alert_data["cordinates"]["lat"],longitude=alert_data["cordinates"]["lng"])
+                '''
+                In this block you do what you have to do with your code,
+                now when you have all what you could possibly have including:
+                alert id, alert city, time to run away, cordinates of city,
+                random cordinates where the missle may land and timestamp when the missle started fireup.
+                '''
+
+if __name__ == "__main__":
+    main()
