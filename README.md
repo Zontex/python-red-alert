@@ -43,5 +43,5 @@ the API use's the official public API provided by "Pikud ha-oref" in Israel.
 
 * Python requests library
 ```sh
-$ sudo pip install python-requests
+$ sudo pip install requests
 ```
