@@ -18,8 +18,8 @@ class RedAlert():
 
     def get_coordinates(self,location_name):
 
-        #This function will get city cordinates by given city name
-        #so later on it will be possible to virtualize the flying rocket to the city
+        #This function will get city coordinates by given city name
+        #so later on it will be possible to visualization the flying rocket to the city
         HOST = "https://maps.google.com/maps/api/geocode/json?address=%s" % location_name
         r = requests.get(HOST, headers=self.headers)
         j = json.loads(r.content)
@@ -27,7 +27,7 @@ class RedAlert():
 
     def random_coordinates(self,latitude,longitude):
 
-        # get random cordinates within the city for random virtualization
+        # get random coordinates within the city for random visualization
         # radius of the circle
         circle_r = 1
         # center of the circle (x, y)
@@ -122,15 +122,15 @@ def main():
                 alert_data = alert.locations[alert_code]
                 # set the timestamp of the current alert
                 alert_data["ts"] = red_alerts["ts"]
-                # get the cordinates of the city where the rocket is flying to
-                alert_data["cordinates"] = alert.get_coredinates(location_name=alert_data["location_name"])
-                # random cordinates where the rocket should fly to in the virtualization map
-                alert_data["random_cordinates"] = alert.random_cordinates(latitude=alert_data["cordinates"]["lat"],longitude=alert_data["cordinates"]["lng"])
+                # get the coordinates of the city where the rocket is flying to
+                alert_data["coordinates"] = alert.get_coordinates(location_name=alert_data["location_name"])
+                # random coordinates where the rocket should fly to in the visualization map
+                alert_data["random_coordinates"] = alert.random_coordinates(latitude=alert_data["coordinates"]["lat"],longitude=alert_data["coordinates"]["lng"])
                 '''
                 In this block you do what you have to do with your code,
                 now when you have all what you could possibly have including:
-                alert id, alert city, time to run away, cordinates of city,
-                random cordinates where the missle may land and timestamp when the missle started fireup.
+                alert id, alert city, time to run away, coordinates of city,
+                random coordinates where the missle may land and timestamp when the missle started fireup.
                 '''
 
 if __name__ == "__main__":
