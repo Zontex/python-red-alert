@@ -31,9 +31,8 @@ var exports   = module.exports = {}
   , alerts    = []
 
 /** 
- Call this to get the alerts
-
- return an array of object with all the alert details 
+ Check if there is ongoing alerts and add more precise details to them
+ It return an array of objects.
  **/ 
 exports.get_alerts = function(callback) {
   // load the locations
@@ -44,7 +43,7 @@ exports.get_alerts = function(callback) {
     if(raw_alerts === null || !raw_alerts) return callback(null);
     var i = 0, alerts = [];
 
-    // loop through each city there is red alert currently
+    // loop through every alerts in order to attach more details
     for(var key in raw_alerts) {
       try {
         alerts.push({
@@ -64,7 +63,7 @@ exports.get_alerts = function(callback) {
 
 /** 
  This function literally return the number of ongoing alerts. 
- WARNING: Numbers of alert is reinitialized everytime "get_alerts" is called
+ WARNING: The number of alerts is reinitialized everytime "get_alerts" is called
  **/
 exports.count_alerts() {
   return alerts.length;
@@ -76,8 +75,7 @@ exports.count_alerts() {
 *****************************/
 
 /** 
-  This function will get city coordinates by given city name
-  so later on it will be possible to virtualize the flying rocket to the city
+  This function will get city coordinates by given city name by using Google Maps API
  **/
 function get_coordinates(location_name, callback) {
   request("https://maps.google.com/maps/api/geocode/json?address=" + location_name, function (error, response, body) {
@@ -90,7 +88,8 @@ function get_coordinates(location_name, callback) {
 }
 
 /** 
- get random coordinates within the city for random virtualization
+ Get random coordinates within the city for random virtualization
+ TO BE DONE<----
  **/
 function random_coordinates(longitude, latitude, callback) {
   var circle_r, circle_x, circle_y, alpha, r, x, y;
@@ -113,7 +112,7 @@ function random_coordinates(longitude, latitude, callback) {
 
 /** 
  This function is to build a locations list of cities and the time they have 
- before the rocket hit the area. for better parsing later.
+ before the rocket hit the area for better parsing.
  **/
 function get_locations_list() {
   // table of keys > values of the time people have to get a shelter
