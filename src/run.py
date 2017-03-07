@@ -16,7 +16,7 @@ class RedAlert():
         # initialize user agent for web requests
         self.headers = {"User-Agent":""}
 
-    def get_coredinates(self,location_name):
+    def get_coordinates(self,location_name):
 
         #This function will get city cordinates by given city name
         #so later on it will be possible to virtualize the flying rocket to the city
@@ -25,7 +25,7 @@ class RedAlert():
         j = json.loads(r.content)
         return j["results"][0]["geometry"]["location"]
 
-    def random_cordinates(self,latitude,longitude):
+    def random_coordinates(self,latitude,longitude):
 
         # get random cordinates within the city for random virtualization
         # radius of the circle
