@@ -38,12 +38,20 @@ the API use's the official public API provided by "Pikud ha-oref" in Israel.
 
 *    Use the milliseconds calculated from how much time left for people to run to shelters,
      Then visualize using that seconds of long the rocket has to fly till it will hit the city.
+     
+### Q) Is it possible to predict or to know where exactly the missile will land?
+
+*    No, at least not for the developers. the military may have such capabilities.
+     The prediction is not possible due to many parameters such as:
+     Where the rocket came from, How much fuel is inside the rocket, at what speed is the rocket flying,
+     Directions of the rocket and weather conditions - something which make it impossible for any
+     non-military individual, even with technology such as machine learning and prediction algorithms.
 
 # Requirements
 
 * Python requests library
 ```sh
-$ sudo pip install requests
+$ pip install requests
 ```
 * NodeJS request library
 ```sh
