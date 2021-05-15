@@ -14,7 +14,14 @@ class RedAlert():
         # initialize locations list
         self.locations = self.get_locations_list()
         # initialize user agent for web requests
-        self.headers = {"User-Agent":""}
+        self.headers = {
+            "Content-Type":"application/x-www-form-urlencoded; charset=UTF-8",
+            "X-Requested-With": "XMLHttpRequest",
+            "Referer": "https://www.oref.org.il/11088-13708-he/Pakar.aspx",
+            "sec-ch-ua":'"Not A;Brand";v="99", "Chromium";v="90", "Google Chrome";v="90"',
+            "sec-ch-ua-mobile": "?0",
+            "User-Agent":""
+        }
 
     def get_coordinates(self,location_name):
 
@@ -91,8 +98,11 @@ class RedAlert():
     def get_red_alerts(self):
 
         # get red alerts
-        HOST = "http://www.oref.org.il/WarningMessages/Alert/alerts.json?v=1"
-        r = requests.get(HOST, headers=self.headers})
+        HOST = "https://www.oref.org.il/WarningMessages/alert/alerts.json"
+        #HOST = "http://www.oref.org.il/WarningMessages/Alert/alerts.json?v=1"
+        r = requests.get(HOST, headers=self.headers)
+        if(r.content == b''):
+            return None
         # parse the json response
         j = json.loads(r.content)
         # check if there is no alerts - if so, return null.
@@ -132,6 +142,8 @@ def main():
                 alert id, alert city, time to run away, coordinates of city,
                 random coordinates where the missle may land and timestamp when the missle started fireup.
                 '''
+        else:
+            print("[-] No alerts for now, keep checking ...")
 
 if __name__ == "__main__":
     main()
