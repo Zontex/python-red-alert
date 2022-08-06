@@ -1,0 +1,734 @@
+{
+    "נגב 299": {
+        "location_name": "קשכר נבארי",
+        "time_to_run": "90000"
+    },
+    "יהודה 200": {
+        "location_name": "תקוע",
+        "time_to_run": "90000"
+    },
+    "יהודה 188": {
+        "location_name": "תרקומיא",
+        "time_to_run": "90000"
+    },
+    "יהודה 207": {
+        "location_name": "תראמה",
+        "time_to_run": "90000"
+    },
+    "נגב 300": {
+        "location_name": "תראבין א צאנה שבט",
+        "time_to_run": "90000"
+    },
+    "באר שבע 286": {
+        "location_name": "תראבין א צאנה",
+        "time_to_run": "45000"
+    },
+    "ירושלים 194": {
+        "location_name": "רמת רחל",
+        "time_to_run": "90000"
+    },
+    "שומרון 123": {
+        "location_name": "רנתיס",
+        "time_to_run": "90000"
+    },
+    "נגב296": {
+        "location_name": "עוקבי",
+        "time_to_run": "90000"
+    },
+    "קו העימות 15": {
+        "location_name": "עראמשה",
+        "time_to_run": "10000"
+    },
+    "קצרין 7": {
+        "location_name": "שעל",
+        "time_to_run": "15000"
+    },
+    "שומרון 126": {
+        "location_name": "שוקבא",
+        "time_to_run": "90000"
+    },
+    "שומרון 120": {
+        "location_name": "תל",
+        "time_to_run": "90000"
+    },
+    "שומרון 119": {
+        "location_name": "תנין",
+        "time_to_run": "90000"
+    },
+    "יהודה 206": {
+        "location_name": "ראש צורים",
+        "time_to_run": "90000"
+    },
+    "שומרון 121": {
+        "location_name": "שערי תקווה",
+        "time_to_run": "90000"
+    },
+    "אשקלון 247": {
+        "location_name": "א.ת אשקלון",
+        "time_to_run": "30000"
+    },
+    "נגב 287": {
+        "location_name": "תל שבע",
+        "time_to_run": "90000"
+    },
+    "בית שמש 189": {
+        "location_name": "שורש",
+        "time_to_run": "90000"
+    },
+    "גליל תחתון 63  ": {
+        "location_name": "שפרעם",
+        "time_to_run": "60000"
+    },
+    "נגב 297": {
+        "location_name": "שגב שלום",
+        "time_to_run": "90000"
+    },
+    "הקריות 71": {
+        "location_name": "רמת יוחנן",
+        "time_to_run": "60000"
+    },
+    "גליל תחתון 60": {
+        "location_name": "תרדיון",
+        "time_to_run": "60000"
+    },
+    "מנשה 104": {
+        "location_name": "רגבים",
+        "time_to_run": "90000"
+    },
+    "קו העימות 22": {
+        "location_name": "יראון",
+        "time_to_run": "10000"
+    },
+    "אשדוד 275": {
+        "location_name": "תלמי יחיאל",
+        "time_to_run": "60000"
+    },
+    "שרון 138": {
+        "location_name": "שושנת העמקים",
+        "time_to_run": "90000"
+    },
+    "עמק יזרעאל 93": {
+        "location_name": "תל יוסף",
+        "time_to_run": "60000"
+    },
+    "בית שמש 188": {
+        "location_name": "תרום",
+        "time_to_run": "90000"
+    },
+    "קו העימות 17": {
+        "location_name": "פסוטה",
+        "time_to_run": "10000"
+    },
+    "שרון 142": {
+        "location_name": "תל יצחק",
+        "time_to_run": "90000"
+    },
+    "קו העימות 16": {
+        "location_name": "שתולה",
+        "time_to_run": "10000"
+    },
+    "בית שמש 191": {
+        "location_name": "צור הדסה",
+        "time_to_run": "90000"
+    },
+    "אשדוד 281": {
+        "location_name": "שלווה",
+        "time_to_run": "30000"
+    },
+    "גולן 2": {
+        "location_name": "רמת מגשימים",
+        "time_to_run": "10000"
+    },
+    "ים המלח 210": {
+        "location_name": "מצפה שלם",
+        "time_to_run": "90000"
+    },
+    "עוטף עזה 238": {
+        "location_name": "תלמי יוסף",
+        "time_to_run": "15000"
+    },
+    "גולן 1": {
+        "location_name": "עין קנייא",
+        "time_to_run": "10000"
+    },
+    "אשקלון 234": {
+        "location_name": "תלמי אליהו",
+        "time_to_run": "15000"
+    },
+    "תבור 98": {
+        "location_name": "שרונה",
+        "time_to_run": "60000"
+    },
+    "שומרון 118": {
+        "location_name": "תעשיון שחק",
+        "time_to_run": "90000"
+    },
+    "עירון 113": {
+        "location_name": "מעלה עירון",
+        "time_to_run": "90000"
+    },
+    "עירון 112": {
+        "location_name": "ריחן",
+        "time_to_run": "90000"
+    },
+    "שומרון 124": {
+        "location_name": "קראות בני זיד",
+        "time_to_run": "90000"
+    },
+    "עמק חפר 149": {
+        "location_name": "נזלת עיסא",
+        "time_to_run": "90000"
+    },
+    "באר שבע 288": {
+        "location_name": "רנן",
+        "time_to_run": "30000"
+    },
+    "גליל עליון 44": {
+        "location_name": "שפר",
+        "time_to_run": "30000"
+    },
+    "עוטף עזה 219": {
+        "location_name": "ארז",
+        "time_to_run": "15000"
+    },
+    "דן 161": {
+        "location_name": "רמת אפעל",
+        "time_to_run": "90000"
+    },
+    "מנשה 105": {
+        "location_name": "שדות ים",
+        "time_to_run": "90000"
+    },
+    "נגב 301": {
+        "location_name": "רחמה",
+        "time_to_run": "90000"
+    },
+    "גולן 3": {
+        "location_name": "קשת",
+        "time_to_run": "10000"
+    },
+    "אשקלון 256": {
+        "location_name": "פטיש",
+        "time_to_run": "30000"
+    },
+    "עמק יזרעאל 86": {
+        "location_name": "שער העמקים",
+        "time_to_run": "60000"
+    },
+    "שרון 143": {
+        "location_name": "שדי חמד",
+        "time_to_run": "90000"
+    },
+    "דן 162": {
+        "location_name": "מקווה ישראל",
+        "time_to_run": "90000"
+    },
+    "בקעת בית שאן 128": {
+        "location_name": "תל תאומים",
+        "time_to_run": "60000"
+    },
+    "הקריות 70": {
+        "location_name": "קרית שמואל",
+        "time_to_run": "60000"
+    },
+    "שומרון 125": {
+        "location_name": "תלפית במרכז השומרון",
+        "time_to_run": "90000"
+    },
+    "עמק יזרעאל 90": {
+        "location_name": "עפולה",
+        "time_to_run": "60000"
+    },
+    "שפלה 179": {
+        "location_name": "ניר צבי",
+        "time_to_run": "90000"
+    },
+    "שפלה 174": {
+        "location_name": "צפריה",
+        "time_to_run": "90000"
+    },
+    "עוטף עזה 220": {
+        "location_name": "שדרות",
+        "time_to_run": "15000"
+    },
+    "עמק חפר 139": {
+        "location_name": "תל מונד",
+        "time_to_run": "90000"
+    },
+    "גליל עליון 47": {
+        "location_name": "שדה אליעזר",
+        "time_to_run": "30000"
+    },
+    "אילת 311": {
+        "location_name": "אילת",
+        "time_to_run": "30000"
+    },
+    "תבור 96": {
+        "location_name": "שעורים",
+        "time_to_run": "60000"
+    },
+    "שפלה 182": {
+        "location_name": "רחובות",
+        "time_to_run": "90000"
+    },
+    "תבור 95": {
+        "location_name": "תל עדשים",
+        "time_to_run": "60000"
+    },
+    "באר שבע 285": {
+        "location_name": "שקף",
+        "time_to_run": "60000"
+    },
+    "אשדוד 280": {
+        "location_name": "רווחה",
+        "time_to_run": "45000"
+    },
+    "בקעה 133": {
+        "location_name": "רימונים",
+        "time_to_run": "90000"
+    },
+    "עמק יזרעאל 87": {
+        "location_name": "תמרת",
+        "time_to_run": "60000"
+    },
+    "עמק חפר 137": {
+        "location_name": "עין החורש",
+        "time_to_run": "90000"
+    },
+    "ערבה 310": {
+        "location_name": "שחרות",
+        "time_to_run": "180000"
+    },
+    "גליל עליון 50": {
+        "location_name": "ראש פינה",
+        "time_to_run": "30000"
+    },
+    "מנשה 103": {
+        "location_name": "רמת השופט",
+        "time_to_run": "90000"
+    },
+    "שפלה 169": {
+        "location_name": "רינתיה",
+        "time_to_run": "90000"
+    },
+    "אשדוד 272": {
+        "location_name": "שתולים",
+        "time_to_run": "45000"
+    },
+    "גליל תחתון 55  ": {
+        "location_name": "רביד",
+        "time_to_run": "60000"
+    },
+    "בקעה 130": {
+        "location_name": "תל אל בידה",
+        "time_to_run": "90000"
+    },
+    "שומרון 122": {
+        "location_name": "רבבה",
+        "time_to_run": "90000"
+    },
+    "אשקלון 253": {
+        "location_name": "תלמי בילו",
+        "time_to_run": "30000"
+    },
+    "אשדוד 271": {
+        "location_name": "עד הלום",
+        "time_to_run": "45000"
+    },
+    "נגב 302": {
+        "location_name": "שיבטה",
+        "time_to_run": "90000"
+    },
+    "אשקלון 246": {
+        "location_name": "באר גנים",
+        "time_to_run": "30000"
+    },
+    "גליל עליון 38": {
+        "location_name": "עמקה",
+        "time_to_run": "30000"
+    },
+    "שפלה 178": {
+        "location_name": "רמלה",
+        "time_to_run": "90000"
+    },
+    "באר שבע 292": {
+        "location_name": "מסעודין אל עזאזמה",
+        "time_to_run": "60000"
+    },
+    "עמק חפר 150": {
+        "location_name": "תנובות",
+        "time_to_run": "90000"
+    },
+    "עוטף עזה 227": {
+        "location_name": "בארי",
+        "time_to_run": "15000"
+    },
+    "שפלה 181": {
+        "location_name": "שעלבים",
+        "time_to_run": "90000"
+    },
+    "גליל עליון 37": {
+        "location_name": "שמרת",
+        "time_to_run": "30000"
+    },
+    "גליל תחתון 57": {
+        "location_name": "קדרים",
+        "time_to_run": "60000"
+    },
+    "באר שבע 289": {
+        "location_name": "תפרח",
+        "time_to_run": "45000"
+    },
+    "בית שמש 190": {
+        "location_name": "קרית ענבים",
+        "time_to_run": "90000"
+    },
+    "גליל עליון 42": {
+        "location_name": "שזור",
+        "time_to_run": "30000"
+    },
+    "אשדוד 273": {
+        "location_name": "נווה מבטח",
+        "time_to_run": "60000"
+    },
+    "גליל עליון 49": {
+        "location_name": "צפת",
+        "time_to_run": "30000"
+    },
+    "כרמל 82": {
+        "location_name": "עספיא",
+        "time_to_run": "60000"
+    },
+    "שומרון 127": {
+        "location_name": "נבי סמואל",
+        "time_to_run": "90000"
+    },
+    "אשדוד 268": {
+        "location_name": "רבדים",
+        "time_to_run": "60000"
+    },
+    "גליל עליון 43": {
+        "location_name": "חרשים",
+        "time_to_run": "30000"
+    },
+    "אשדוד 282": {
+        "location_name": "לכיש",
+        "time_to_run": "45000"
+    },
+    "אשדוד 267": {
+        "location_name": "שדמה",
+        "time_to_run": "60000"
+    },
+    "אשקלון 254": {
+        "location_name": "קרית חינוך שדות נגב",
+        "time_to_run": "30000"
+    },
+    "קו העימות 26": {
+        "location_name": "תל חי",
+        "time_to_run": "10000"
+    },
+    "שפלה 183": {
+        "location_name": "עיינות",
+        "time_to_run": "90000"
+    },
+    "שרון 137": {
+        "location_name": "נעורים",
+        "time_to_run": "90000"
+    },
+    "שפלה 184": {
+        "location_name": "רמות מאיר",
+        "time_to_run": "90000"
+    },
+    "שפלה 173": {
+        "location_name": "שוהם",
+        "time_to_run": "90000"
+    },
+    "כרמל 81": {
+        "location_name": "עתלית",
+        "time_to_run": "60000"
+    },
+    "גליל תחתון 61": {
+        "location_name": "רומת היב",
+        "time_to_run": "60000"
+    },
+    "אשקלון 250": {
+        "location_name": "תלמי יפה",
+        "time_to_run": "15000"
+    },
+    "קו העימות 30": {
+        "location_name": "כברי",
+        "time_to_run": "10000"
+    },
+    "דן 160": {
+        "location_name": "רמת גן",
+        "time_to_run": "90000"
+    },
+    "אשקלון 238": {
+        "location_name": "שלומית",
+        "time_to_run": "15000"
+    },
+    "קו העימות 14": {
+        "location_name": "שלומי",
+        "time_to_run": "10000"
+    },
+    "אשקלון 251": {
+        "location_name": "תלמים",
+        "time_to_run": "30000"
+    },
+    "אשקלון 255": {
+        "location_name": "תדהר",
+        "time_to_run": "30000"
+    },
+    "אשקלון 248": {
+        "location_name": "ניר ישראל",
+        "time_to_run": "30000"
+    },
+    "מנשה 102": {
+        "location_name": "צרופה",
+        "time_to_run": "90000"
+    },
+    "מעלה אדומים 200": {
+        "location_name": "קדר",
+        "time_to_run": "90000"
+    },
+    "קו העימות 23": {
+        "location_name": "ריחאנייה",
+        "time_to_run": "10000"
+    },
+    "אשדוד 266": {
+        "location_name": "כפר הנגיד",
+        "time_to_run": "60000"
+    },
+    "אשקלון 257": {
+        "location_name": "צאלים",
+        "time_to_run": "30000"
+    },
+    "שפלה 168": {
+        "location_name": "תעשיון השרון",
+        "time_to_run": "90000"
+    },
+    "שרון 140": {
+        "location_name": "רשפון",
+        "time_to_run": "90000"
+    },
+    "מנשה 108": {
+        "location_name": "תלמי אלעזר",
+        "time_to_run": "90000"
+    },
+    "אשדוד 278": {
+        "location_name": "תירוש",
+        "time_to_run": "60000"
+    },
+    "עוטף עזה 251": {
+        "location_name": "גברעם",
+        "time_to_run": "15000"
+    },
+    "קו העימות 25": {
+        "location_name": "שמיר",
+        "time_to_run": "10000"
+    },
+    "בקעה 131": {
+        "location_name": "שלומציון",
+        "time_to_run": "90000"
+    },
+    "בקעה 132": {
+        "location_name": "תומר",
+        "time_to_run": "90000"
+    },
+    "דן 155": {
+        "location_name": "רמת השרון",
+        "time_to_run": "90000"
+    },
+    "מנשה 106": {
+        "location_name": "פרדס חנה כרכור",
+        "time_to_run": "90000"
+    },
+    "שרון 141": {
+        "location_name": "צופית",
+        "time_to_run": "90000"
+    },
+    "שפלה 175": {
+        "location_name": "ראשון לציון",
+        "time_to_run": "90000"
+    },
+    "קו העימות 31": {
+        "location_name": "עין יעקב",
+        "time_to_run": "10000"
+    },
+    "קו העימות 29": {
+        "location_name": "שבי ציון",
+        "time_to_run": "30000"
+    },
+    "קו העימות 19": {
+        "location_name": "סאסא",
+        "time_to_run": "10000"
+    },
+    "אשקלון 252": {
+        "location_name": "רוחמה",
+        "time_to_run": "30000"
+    },
+    "קו העימות 24": {
+        "location_name": "רמות נפתלי",
+        "time_to_run": "10000"
+    },
+    "קו העימות 28": {
+        "location_name": "שניר",
+        "time_to_run": "10000"
+    },
+    "קצרין 10": {
+        "location_name": "תל קציר",
+        "time_to_run": "15000"
+    },
+    "חיפה 75": {
+        "location_name": "כפר גלים",
+        "time_to_run": "60000"
+    },
+    "עמק יזרעאל 89": {
+        "location_name": "כפר ברוך",
+        "time_to_run": "60000"
+    },
+    "קו העימות 32": {
+        "location_name": "מעלות תרשיחא",
+        "time_to_run": "10000"
+    },
+    "אשקלון 249": {
+        "location_name": "שחר",
+        "time_to_run": "30000"
+    },
+    "עוטף עזה 217": {
+        "location_name": "כרמיה",
+        "time_to_run": "15000"
+    },
+    "עוטף עזה 225": {
+        "location_name": "תקומה",
+        "time_to_run": "15000"
+    },
+    "מנשה 107": {
+        "location_name": "חדרה",
+        "time_to_run": "90000"
+    },
+    "עוטף עזה 236": {
+        "location_name": "סופה",
+        "time_to_run": "15000"
+    },
+    "קו העימות 20": {
+        "location_name": "צוריאל",
+        "time_to_run": "10000"
+    },
+    "באר שבע 291": {
+        "location_name": "חצרים",
+        "time_to_run": "60000"
+    },
+    "גליל תחתון 56  ": {
+        "location_name": "מצפה",
+        "time_to_run": "60000"
+    },
+    "גליל עליון 41": {
+        "location_name": "מגדל תפן",
+        "time_to_run": "30000"
+    },
+    "עוטף עזה 218": {
+        "location_name": "נתיב העשרה",
+        "time_to_run": "15000"
+    },
+    "עוטף עזה 222": {
+        "location_name": "יכיני",
+        "time_to_run": "15000"
+    },
+    "ים המלח 207 ": {
+        "location_name": "עין גדי",
+        "time_to_run": "90000"
+    },
+    "עוטף עזה 234": {
+        "location_name": "עמיעוז",
+        "time_to_run": "15000"
+    },
+    "עוטף עזה 230": {
+        "location_name": "כיסופים",
+        "time_to_run": "15000"
+    },
+    "גליל עליון 40": {
+        "location_name": "תובל",
+        "time_to_run": "30000"
+    },
+    "עוטף עזה 223": {
+        "location_name": "סעד",
+        "time_to_run": "15000"
+    },
+    "עוטף עזה 237": {
+        "location_name": "כרם שלום",
+        "time_to_run": "15000"
+    },
+    "גליל עליון 35": {
+        "location_name": "רגבה",
+        "time_to_run": "30000"
+    },
+    "עוטף עזה 233": {
+        "location_name": "עין הבשור",
+        "time_to_run": "15000"
+    },
+    "נגב 305": {
+        "location_name": "שלווה במדבר",
+        "time_to_run": "90000"
+    },
+    "שפלה 171": {
+        "location_name": "מחנה נחשונים",
+        "time_to_run": "90000"
+    },
+    "עוטף עזה 221": {
+        "location_name": "מפלסים",
+        "time_to_run": "15000"
+    },
+    "אשדוד 276": {
+        "location_name": "שפיר",
+        "time_to_run": "45000"
+    },
+    "עוטף עזה 224": {
+        "location_name": "עלומים",
+        "time_to_run": "15000"
+    },
+    "אשקלון 245": {
+        "location_name": "ניצנים",
+        "time_to_run": "30000"
+    },
+    "עוטף עזה 232": {
+        "location_name": "ניר עוז",
+        "time_to_run": "15000"
+    },
+    "עוטף עזה 231": {
+        "location_name": "עין השלושה",
+        "time_to_run": "15000"
+    },
+    "חיפה 78": {
+        "location_name": "נמל חיפה",
+        "time_to_run": "60000"
+    },
+    "שפלה 172": {
+        "location_name": "נמל תעופה בן גוריון",
+        "time_to_run": "90000"
+    },
+    "כרמל 80": {
+        "location_name": "נשר",
+        "time_to_run": "60000"
+    },
+    "גליל עליון 46": {
+        "location_name": "ספסופה",
+        "time_to_run": "30000"
+    },
+    "שפלה 170": {
+        "location_name": "ראש העין",
+        "time_to_run": "90000"
+    },
+    "עוטף עזה 228": {
+        "location_name": "רעים",
+        "time_to_run": "15000"
+    },
+    "ערבה 308": {
+        "location_name": "שיטים",
+        "time_to_run": "180000"
+    },
+    "דן 157": {
+        "location_name": "תל אביב יפו",
+        "time_to_run": "90000"
+    }
+}

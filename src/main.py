@@ -13,15 +13,35 @@ class RedAlert():
 
         # initialize locations list
         self.locations = self.get_locations_list()
+        # cookies
+        self.cookies = ""
         # initialize user agent for web requests
         self.headers = {
-            "Content-Type":"application/x-www-form-urlencoded; charset=UTF-8",
-            "X-Requested-With": "XMLHttpRequest",
-            "Referer": "https://www.oref.org.il/11088-13708-he/Pakar.aspx",
-            "sec-ch-ua":'"Not A;Brand";v="99", "Chromium";v="90", "Google Chrome";v="90"',
-            "sec-ch-ua-mobile": "?0",
-            "User-Agent":""
+           "Host":"www.oref.org.il",
+           "Connection":"keep-alive",
+           "Content-Type":"application/json",
+           "charset":"utf-8",
+           "X-Requested-With":"XMLHttpRequest",
+           "sec-ch-ua-mobile":"?0",
+           "User-Agent":"",
+           "sec-ch-ua-platform":"macOS",
+           "Accept":"*/*",
+           "sec-ch-ua": '".Not/A)Brand"v="99", "Google Chrome";v="103", "Chromium";v="103"',
+           "Sec-Fetch-Site":"same-origin",
+           "Sec-Fetch-Mode":"cors",
+           "Sec-Fetch-Dest":"empty",
+           "Referer":"https://www.oref.org.il/12481-he/Pakar.aspx",
+           "Accept-Encoding":"gzip, deflate, br",
+           "Accept-Language":"en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7",
         }
+        # intiiate cokies
+        self.get_cookies()
+
+
+    def get_cookies(self):
+        HOST = "https://www.oref.org.il/"
+        r = requests.get(HOST,headers=self.headers)
+        self.cookies = r.cookies
 
     def get_coordinates(self,location_name):
 
@@ -60,48 +80,17 @@ class RedAlert():
         before the rocket hit the fan. for better parsing later
         '''
 
-        # table of keys > values of the time people have to get a shelter
-        string_to_miliseconds = {
-            "3 דקות":"180000",
-            "דקה וחצי":"90000",
-            "דקה":"60000",
-            "45 שניות":"45000",
-            "30 שניות":"30000",
-            "15 שניות":"15000",
-            "מיידי":"10000"
-        }
-
-        # open csv with unparsed data
-        csv = open("targets.csv", "r")
-        # prepare empty dictionary
-        locations = {}
-
-        # for each line in the csv, we gonna parse it baby
-        for line in csv:
-            # split the line with "," so we know where things belongs to
-            line = line.split("\n")[0].split(",")
-            # get town name
-            location_name = line[0]
-            # get time people have to run in miliseconds
-            time_to_run = string_to_miliseconds[line[1]]
-            # get town code name where the rocket is about to fall
-            alert_code = line[2]
-            # align it all beautifully into a row
-            row = {alert_code:{"location_name":location_name,"time_to_run":time_to_run}}
-            # update locations dictionary
-            locations.update(row)
-        # close the csv to save memory
-        csv.close()
-        # finally, return the locations
-        return locations
+        f = open('targets.json')
+        # returns JSON object as 
+        return json.load(f)
 
     def get_red_alerts(self):
 
         # get red alerts
         HOST = "https://www.oref.org.il/WarningMessages/alert/alerts.json"
-        #HOST = "http://www.oref.org.il/WarningMessages/Alert/alerts.json?v=1"
-        r = requests.get(HOST, headers=self.headers)
-        if(r.content == b''):
+        r = requests.get(HOST, headers=self.headers, cookies=self.cookies)
+        alerts = r.content.decode("UTF-8").replace("\n","").replace("\r","")
+        if(len(alerts) <= 1):
             return None
         # parse the json response
         j = json.loads(r.content)
@@ -110,6 +99,7 @@ class RedAlert():
             return None
         # initialize the current timestamp to know when the rocket alert started
         j["timestamp"] = time.time()
+        # parse data
         return j
 
 def main():
@@ -118,6 +108,10 @@ def main():
     alert = RedAlert()
     # check for alerts all the time and do stuff, never stop.
     while True:
+        # set empty alert data dict
+        alert_data = {}
+        city_data = []
+        migun_time = 0
         # sleep 1 second before checking alerts over again to not put pressure on the server.
         time.sleep(1)
         # get alerts from pikud ha-oref website
@@ -125,17 +119,24 @@ def main():
         # if there is red alerts right now, get into action, quickly!
         if(red_alerts != None):
             # loop through each city there is red alert currently
-            for alert_code in red_alerts["data"]:
+            for alert_city in red_alerts["data"]:
                 # get unique alert id for the current looping alerts
                 alert_id = red_alerts["id"]
                 # get the data of the current alert code
-                alert_data = alert.locations[alert_code]
-                # set the timestamp of the current alert
-                alert_data["ts"] = red_alerts["ts"]
-                # get the coordinates of the city where the rocket is flying to
-                alert_data["coordinates"] = alert.get_coordinates(location_name=alert_data["location_name"])
-                # random coordinates where the rocket should fly to in the visualization map
-                alert_data["random_coordinates"] = alert.random_coordinates(latitude=alert_data["coordinates"]["lat"],longitude=alert_data["coordinates"]["lng"])
+                for i in alert.locations:
+                    if(alert.locations[i]["label"] == alert_city):
+                        migun_time = alert.locations[i]["migun_time"]
+                        # set the timestamp of the current alert
+                        city_data.append(alert.locations[i])
+                        # get the coordinates of the city where the rocket is flying to
+                        '''
+                        # Google Maps requires API key #
+                        '''
+                        #alert_data["coordinates"] = alert.get_coordinates(location_name=alert_city)
+                        # random coordinates where the rocket should fly to in the visualization map
+                        #alert_data["random_coordinates"] = alert.random_coordinates(latitude=alert_data["coordinates"]["lat"],longitude=alert_data["coordinates"]["lng"])
+                red_alerts["cities_labels"] = city_data
+                red_alerts["time_to_run"] = migun_time
                 '''
                 In this block you do what you have to do with your code,
                 now when you have all what you could possibly have including:
