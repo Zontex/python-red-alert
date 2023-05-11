@@ -80,7 +80,7 @@ class RedAlert():
         before the rocket hit the fan. for better parsing later
         '''
 
-        f = open('targets.json')
+        f = open('targets.json', encoding='utf-8')
         # returns JSON object as 
         return json.load(f)
 
